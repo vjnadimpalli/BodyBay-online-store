@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BodyBay</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<!-- START_HIGHLIGHT -->
+<body class='<%= controller.controller_name %>'>
+<!-- END_HIGHLIGHT -->
+  <div id="banner">
+    <%= image_tag("logo_bb.png") %>
+    <div id="title"><%= @page_title || "BodyBay" %></div><!-- <label id="code.depot.e.title"/> -->
+      <div id="signin">Welcome! <a href="#">Sign-in</a>, New Customer? Start <a href="#">here</a><br/><%= Time.now %></div>
+  </div>
+  <div id="topright">
+    
+    <a href="#">My BodyBay</a>
+
+    <a href="#" alt="My Bag" title="My Bag"><%= image_tag("bag.jpeg") %></a>&nbsp;&nbsp;&nbsp;
+    <a href="#">Customer Support</a>	
+  </div>
+  <div id="columns">
+    <div id="side">
+      
+      <ul>
+        <li><a href="#">Aveeno</a></li>
+	<li><a href="#">Dove</a> 
+          <ul> 
+            <li><a href="#">Product 1</a></li> 
+            <li><a href="#">Product 2</a></li> 
+            <li><a href="#">Product 3</a></li> 
+            <li><a href="#">Product 4</a></li> 
+          </ul> 
+        </li>
+        <li><a href="#">Evelyn</a> 
+          <ul> 
+            <li><a href="#">Product 1</a></li> 
+            <li><a href="#">Product 2</a></li> 
+            <li><a href="#">Product 3</a></li> 
+            <li><a href="#">Product 4</a></li> 
+            <li><a href="#">Product 5</a></li> 
+          </ul> 
+        </li>
+        <li><a href="#">Lakme</a> 
+          <ul> 
+            <li><a href="#">Product 1</a></li> 
+            <li><a href="#">Product 2</a></li> 
+            <li><a href="#">Product 3</a></li> 
+            <li><a href="#">Product 4</a></li> 
+          </ul> 
+        </li> 
+
+      </ul>
+    </div>
+    
+    <div id="main">
+<!-- END_HIGHLIGHT -->
+      <%= yield %><!-- <label id="code.depot.e.include"/> -->
+<!-- START_HIGHLIGHT -->
+    </div>
+  </div>
+<!-- END_HIGHLIGHT -->
+</body>
+</html>
+

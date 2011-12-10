@@ -1,0 +1,80 @@
+// Place all the styles related to the Store controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* START_HIGHLIGHT */
+.store {
+  h1 {
+    margin: 0;
+    padding-bottom: 0.5em;
+    font:  150% sans-serif;
+    color: black;
+    #border-bottom: 1px groove #77d;
+  }
+
+  /* An entry in the store catalog */
+  .entry {
+    overflow: auto;
+    margin-top: 1em;
+    border-bottom: 1px groove #77d;
+    border-left: 1px groove #77d;
+    border-right: 1px groove #77d;
+    border-top: 1px groove #77d;
+    padding-left: 5px;
+    min-height: 120px;
+    -moz-border-radius: 25px 10px / 10px 25px; 
+    border-radius: 25px 10px / 10px 25px;
+
+    form, form div { 
+      display: inline;
+    }
+
+    img {
+      width: 80px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      position: absolute;
+      margin-top: 7px;
+      padding-left: 5px;
+      height: 110px;
+      border-color:  #616D7E;
+      -moz-border-radius: 25px 10px / 10px 25px; 
+      border-radius: 25px 10px / 10px 25px;
+
+    }
+
+    h3 {
+      padding-top: 5px;
+      font-size: 120%;
+      font-family: sans-serif;
+      margin-left: 100px;
+      margin-top: 0;
+      margin-bottom: 2px;
+      color: #616D7E;
+    }
+    
+    info {
+      position: absolute;
+      padding-left: 100px;
+      height: 100px;
+      width: 590px;
+
+    }
+
+    p, div.price_line {
+      position: relative;
+      padding-top: 120px;
+      
+      margin-left: 100px;
+      margin-top: 0.5em; 
+      margin-bottom: 0.8em; 
+    }
+
+    .price {
+      color: #616D7E;
+      font-weight: bold;
+      margin-right: 3em;
+    }
+  }
+}
+/* END_HIGHLIGHT */

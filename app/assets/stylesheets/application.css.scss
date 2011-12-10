@@ -1,0 +1,160 @@
+/*
+ * This is a manifest file that'll automatically include all the
+ * stylesheets available in this directory and any sub-directories.
+ * You're free to add application-wide styles to this file and they'll
+ * appear at the top of the compiled file, but it's generally better
+ * to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+
+/* START_HIGHLIGHT */
+#banner {
+  background: #fff;
+  color: #282;
+  left: 10px;
+  height: 40px;
+}
+
+#title {
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: black;
+  position: relative;
+  top: 10px;
+  width: 170px;
+  left: 230px;
+  background: white; 
+}
+
+#signin {
+  width: 330px;
+  position: relative;  
+  left: 395px;  
+  top: -10px;
+}
+
+#banner img {
+  position: absolute;
+  top: 5px;
+  left: 27px;
+  width:        110px;
+  height:       100px;
+  }
+
+#topright {
+  background: #fff;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: #282;
+  position: relative;
+  top: -35px;
+  left: 1050px;
+  width: 250px; 
+}
+
+#topright a {
+  color: #000;
+  font-size: small;
+  position: right;
+  
+}
+
+#topright a:hover {
+  background-color: #EDDA74;
+}
+
+#topright img {
+  position: absolute;
+  top: 12px;
+  right: 125px;
+  width:        30px;
+  height:       30px;
+  border: none; 
+}
+
+#notice {
+  color: #000 !important;
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
+}
+
+#columns {
+  
+  #background: #141;
+
+  #main {
+    margin-left: 17em;
+    padding: 1em;
+    background: white;
+    width: 700px;
+  }
+
+  #side {
+    float: left;
+    padding: 1em 2em;
+    width: 1px;
+    #background: #141;
+
+    
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 150px;
+      border-bottom: 1px solid #ccc;
+      
+
+       }
+
+    ul li {
+      position: relative;
+      
+       }
+
+    li ul {
+	position: absolute;
+	left: 149px;
+	top: 0;
+	display: none;
+	}
+
+    ul li a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	background: #616D7E;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	}
+    
+    li:hover ul { display: block; z-index: +1; }
+
+   
+
+
+
+           }
+
+
+  #rightside{
+    position: absolute;
+    top: 165px;
+    left: 960px;
+    width: 350px;     
+    background-color: #C3FDB8;
+       
+        }
+
+
+
+
+
+    }
+  
+
+/* END_HIGHLIGHT */
